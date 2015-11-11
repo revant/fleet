@@ -199,11 +199,11 @@ BUS</pre>
         
         <tr >
             <td>5</td>
-            <td ><code>odometer</code></td>
+            <td ><code>odometer_km</code></td>
             <td >
                 Float</td>
-            <td >
-                Odometer
+            <td class="text-muted" title="Hidden">
+                Odometer (KM)
                 <p class="text-muted small">
                     Odometer can only be set once at creation of vehicle</p>
             </td>
@@ -212,6 +212,19 @@ BUS</pre>
         
         <tr >
             <td>6</td>
+            <td ><code>odometer_mile</code></td>
+            <td >
+                Float</td>
+            <td class="text-muted" title="Hidden">
+                Odometer (Mile)
+                <p class="text-muted small">
+                    Odometer can only be set once at creation of vehicle</p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
             <td ><code>year</code></td>
             <td >
                 Select</td>
@@ -334,7 +347,7 @@ BUS</pre>
         </tr>
         
         <tr >
-            <td>7</td>
+            <td>8</td>
             <td ><code>cb1_details</code></td>
             <td class="info">
                 Column Break</td>
@@ -346,7 +359,7 @@ BUS</pre>
         </tr>
         
         <tr >
-            <td>8</td>
+            <td>9</td>
             <td ><code>default_fuel</code></td>
             <td >
                 Link</td>
@@ -367,7 +380,7 @@ BUS</pre>
         </tr>
         
         <tr >
-            <td>9</td>
+            <td>10</td>
             <td ><code>tank_capacity</code></td>
             <td >
                 Float</td>
@@ -379,7 +392,7 @@ BUS</pre>
         </tr>
         
         <tr >
-            <td>10</td>
+            <td>11</td>
             <td ><code>tank_capacity_uom</code></td>
             <td >
                 Read Only</td>
@@ -393,7 +406,7 @@ BUS</pre>
         </tr>
         
         <tr >
-            <td>11</td>
+            <td>12</td>
             <td ><code>notes</code></td>
             <td >
                 Small Text</td>
@@ -405,7 +418,7 @@ BUS</pre>
         </tr>
         
         <tr class="info">
-            <td>12</td>
+            <td>13</td>
             <td ><code>sb_legal</code></td>
             <td >
                 Section Break</td>
@@ -417,7 +430,7 @@ BUS</pre>
         </tr>
         
         <tr >
-            <td>13</td>
+            <td>14</td>
             <td ><code>license_plate</code></td>
             <td >
                 Data</td>
@@ -429,7 +442,7 @@ BUS</pre>
         </tr>
         
         <tr >
-            <td>14</td>
+            <td>15</td>
             <td ><code>vin</code></td>
             <td >
                 Data</td>
@@ -441,7 +454,7 @@ BUS</pre>
         </tr>
         
         <tr >
-            <td>15</td>
+            <td>16</td>
             <td ><code>cb2_legal</code></td>
             <td class="info">
                 Column Break</td>
@@ -453,7 +466,7 @@ BUS</pre>
         </tr>
         
         <tr >
-            <td>16</td>
+            <td>17</td>
             <td ><code>insurance_policy</code></td>
             <td >
                 Data</td>
@@ -465,7 +478,7 @@ BUS</pre>
         </tr>
         
         <tr >
-            <td>17</td>
+            <td>18</td>
             <td ><code>insurance_expiry</code></td>
             <td >
                 Date</td>
@@ -477,7 +490,7 @@ BUS</pre>
         </tr>
         
         <tr class="info">
-            <td>18</td>
+            <td>19</td>
             <td ><code>sb_purchase_details</code></td>
             <td >
                 Section Break</td>
@@ -489,7 +502,7 @@ BUS</pre>
         </tr>
         
         <tr >
-            <td>19</td>
+            <td>20</td>
             <td ><code>purchase_receipt</code></td>
             <td >
                 Link</td>
@@ -510,7 +523,7 @@ BUS</pre>
         </tr>
         
         <tr >
-            <td>20</td>
+            <td>21</td>
             <td ><code>purchase_price</code></td>
             <td >
                 Currency</td>
@@ -522,7 +535,7 @@ BUS</pre>
         </tr>
         
         <tr >
-            <td>21</td>
+            <td>22</td>
             <td ><code>purchase_date</code></td>
             <td >
                 Date</td>
@@ -534,7 +547,7 @@ BUS</pre>
         </tr>
         
         <tr class="info">
-            <td>22</td>
+            <td>23</td>
             <td ><code>sb_sales_details</code></td>
             <td >
                 Section Break</td>
@@ -546,7 +559,7 @@ BUS</pre>
         </tr>
         
         <tr >
-            <td>23</td>
+            <td>24</td>
             <td ><code>delivery_note</code></td>
             <td >
                 Link</td>
@@ -567,7 +580,7 @@ BUS</pre>
         </tr>
         
         <tr >
-            <td>24</td>
+            <td>25</td>
             <td ><code>sales_price</code></td>
             <td >
                 Currency</td>
@@ -579,7 +592,7 @@ BUS</pre>
         </tr>
         
         <tr >
-            <td>25</td>
+            <td>26</td>
             <td ><code>sale_date</code></td>
             <td >
                 Date</td>
@@ -611,6 +624,34 @@ BUS</pre>
     <div class="docs-attr-desc"><p></p>
 </div>
     <div style="padding-left: 30px;">
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="set_odometer" href="#set_odometer" class="text-muted small">
+            <i class="icon-link small" style="color: #ccc;"></i></a>
+		<b>set_odometer</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate" href="#validate" class="text-muted small">
+            <i class="icon-link small" style="color: #ccc;"></i></a>
+		<b>validate</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
         
     </div>
     <hr>
