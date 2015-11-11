@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<!-- Built on Frappe. https://frappe.io/ -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Trip Record</title>
+	<meta name="generator" content="frappe">
+    <link type="text/css" rel="stylesheet" href="https://revant.github.io/fleet/assets/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="https://revant.github.io/fleet/assets/css/hljs.css">
+    <link type="text/css" rel="stylesheet" href="https://revant.github.io/fleet/assets/css/font-awesome.css">
+    <link type="text/css" rel="stylesheet" href="https://revant.github.io/fleet/assets/css/octicons/octicons.css">
+    <link type="text/css" rel="stylesheet" href="https://revant.github.io/fleet/assets/css/docs.css">
+
+	<script type="text/javascript" src="https://revant.github.io/fleet/assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="https://revant.github.io/fleet/assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://revant.github.io/fleet/assets/js/highlight.pack.js"></script>
+
+    
+	<link rel="shortcut icon"
+		href="/assets/img/favicon.ico"
+		type="image/x-icon">
+	<link rel="icon"
+		href="/assets/img/favicon.ico"
+		type="image/x-icon">
+    
+<meta name="name" content="Trip Record" data-html-block="meta_block">
+<meta name="twitter:card" content="summary" data-html-block="meta_block">
+<meta name="twitter:description" content="Version 0.0.0 Source Table Name: tabTrip Record Records Trips made with Fleet &lt;h3" data-html-block="meta_block">
+<meta name="og:type" content="article" data-html-block="meta_block">
+<meta name="og:description" content="Version 0.0.0 Source Table Name: tabTrip Record Records Trips made with Fleet &lt;h3" data-html-block="meta_block">
+<meta name="og:title" content="Trip Record" data-html-block="meta_block">
+<meta name="twitter:title" content="Trip Record" data-html-block="meta_block">
+<meta name="description" content="Version 0.0.0 Source Table Name: tabTrip Record Records Trips made with Fleet &lt;h3" data-html-block="meta_block">
+
+		
+			<style data-html-block="style"></style></head>
+<body>
+	<div class="offcanvas-container">
+		<div class="offcanvas">
+			<div class="offcanvas-main-section">
+				<div>
+						<header>
+	<nav class="navbar navbar-default navbar-main" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand ellipsis" href="https://revant.github.io/fleet/">
+					<span>Fleet</span>
+				</a>
+				<a class="pull-right toggle-sidebar visible-xs">
+					<i class="octicon octicon-three-bars"></i>
+				</a>
+			</div>
+			<div class="hidden-xs">
+				
+				<ul class="nav navbar-nav navbar-left">
+</ul>
+<ul class="nav navbar-nav navbar-right"><li data-label='Contents' >
+	<a href="https://revant.github.io/fleet/contents.html"
+		
+		>
+	Contents</a></li><li data-label='User Guide' >
+	<a href="https://revant.github.io/fleet/user"
+		
+		>
+	User Guide</a></li><li data-label='Developer Docs' >
+	<a href="https://revant.github.io/fleet/current"
+		
+		>
+	Developer Docs</a></li>
+	<!-- post login tools -->
+
+</ul>
+
+				
+			</div>
+		</div>
+	</nav>
+</header>
+<script>$(function() { $('.dropdown-toggle').dropdown(); });</script><div class="hero-and-content">
+                        
+                            <div class="container">
+                            <div class="page-container" id="page-trip_record" data-path="current/models/fleet/trip_record"
+    data-doctype="Web Page">
+	<div class="page-content">
+    	<div class="page-content-wrapper">
+            <div class="row">
+                <div class="col-sm-8">
+            		<div class="page-header-block" data-html-block="header"><h1>Trip Record</h1></div>
+                </div>
+                <div class="col-sm-4">
+            		<div class="page-header-actions-block" data-html-block="header-actions"></div>
+                </div>
+            </div>
+    		<div class="page-breadcrumbs" data-html-block="breadcrumbs">
+<ul class="breadcrumb">
+	<li>
+		<span class="icon icon-angle-left"></span>
+		<a href="https://revant.github.io/fleet/current/models/fleet">
+		Module fleet</a>
+	</li>
+	
+</ul>
+</div>
+    	    <div class="page-content-block">
+<div class="webpage-content">
+	
+	<article class="web-page-content" id="trip_record" style="text-align: Left">
+	<!-- title: Trip Record -->
+
+
+
+
+
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 0.0.0</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/revant/fleet/tree/develop/fleet/fleet/doctype/trip_record"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+    <p><b>Table Name:</b> <code>tabTrip Record</code></p>
+
+
+Records Trips made with Fleet
+
+<h3>Fields</h3>
+
+<table class="table table-bordered" style="table-layout: fixed;">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr >
+            <td>1</td>
+            <td ><code>trip_type</code></td>
+            <td >
+                Select</td>
+            <td >
+                Trip Type
+                
+            </td>
+            <td>
+                <pre>Business
+Charity
+Medical
+Personal
+Other</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td ><code>purpose</code></td>
+            <td >
+                Data</td>
+            <td >
+                Purpose
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td ><code>distance_km</code></td>
+            <td >
+                Float</td>
+            <td class="text-muted" title="Hidden">
+                Distance (KM)
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td ><code>distance_mile</code></td>
+            <td >
+                Float</td>
+            <td class="text-muted" title="Hidden">
+                Distance (Mile)
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>cb_initial</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td ><code>party_type</code></td>
+            <td >
+                Link</td>
+            <td >
+                Party Type
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="https://revant.github.io/fleet/current/models/core/doctype">DocType</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td ><code>party</code></td>
+            <td >
+                Dynamic Link</td>
+            <td >
+                Party
+                
+            </td>
+            <td>
+                <pre>party_type</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td class="danger" title="Mandatory"><code>vehicle</code></td>
+            <td >
+                Link</td>
+            <td >
+                Vehicle
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="https://revant.github.io/fleet/current/models/fleet/vehicle">Vehicle</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>9</td>
+            <td ><code>sb_trip_details</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Trip Details
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>10</td>
+            <td ><code>departure_time</code></td>
+            <td >
+                Datetime</td>
+            <td >
+                Departure Time
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
+            <td ><code>departure_odometer_km</code></td>
+            <td >
+                Float</td>
+            <td class="text-muted" title="Hidden">
+                Departure Odometer (KM)
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>12</td>
+            <td ><code>departure_odometer_mile</code></td>
+            <td >
+                Float</td>
+            <td class="text-muted" title="Hidden">
+                Departure Odometer (Mile)
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>13</td>
+            <td ><code>departure_location</code></td>
+            <td >
+                Data</td>
+            <td >
+                Departure Location
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>14</td>
+            <td ><code>cb_trip_details</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>15</td>
+            <td ><code>arrival_time</code></td>
+            <td >
+                Datetime</td>
+            <td >
+                Arrival Time
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>16</td>
+            <td ><code>arrival_odometer_km</code></td>
+            <td >
+                Float</td>
+            <td class="text-muted" title="Hidden">
+                Arrival Odometer (KM)
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>17</td>
+            <td ><code>arrival_odometer_mile</code></td>
+            <td >
+                Float</td>
+            <td class="text-muted" title="Hidden">
+                Arrival Odometer (Mile)
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>18</td>
+            <td ><code>arrival_location</code></td>
+            <td >
+                Data</td>
+            <td >
+                Arrival Location
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>19</td>
+            <td ><code>amended_from</code></td>
+            <td >
+                Link</td>
+            <td >
+                Amended From
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="https://revant.github.io/fleet/current/models/fleet/trip_record">Trip Record</a>
+
+
+                
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>fleet.fleet.doctype.trip_record.trip_record</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>TripRecord</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.model.document.Document</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="calculate_distance" href="#calculate_distance" class="text-muted small">
+            <i class="icon-link small" style="color: #ccc;"></i></a>
+		<b>calculate_distance</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate" href="#validate" class="text-muted small">
+            <i class="icon-link small" style="color: #ccc;"></i></a>
+		<b>validate</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_arrival_departure" href="#validate_arrival_departure" class="text-muted small">
+            <i class="icon-link small" style="color: #ccc;"></i></a>
+		<b>validate_arrival_departure</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+    </div>
+    <hr>
+
+	
+
+
+    
+    
+        <h4>Linked In:</h4>
+        <ul>
+        
+            <li>
+
+
+<a href="https://revant.github.io/fleet/current/models/fleet/trip_record">Trip Record</a>
+
+</li>
+        
+        </ul>
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->
+	</article>
+	
+</div>
+</div>
+    	</div>
+	</div>
+</div>
+                            <!-- edit-link -->
+                            </div>
+                        
+                    </div>
+					<footer class="docs-footer">
+						<div class="container"><br>
+                        <div class="text-center">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="https://github.com/revant/fleet">
+                                    Source</a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/revant/fleet/issues">
+                                    Issues</a>
+                                </li>
+                                <li>
+                                    <a href="https://revant.github.io/fleet/license.html">
+                                    License</a>
+                                </li>
+                                <li>
+                                    <a href="https://discuss.erpnext.com">
+                                    Forum</a>
+                                </li>
+                                <li>
+                                    <a href="https://apps.frappe.io">
+                                    Frappe Apps</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="built-with-frappe text-center">
+                            <img src="https://revant.github.io/fleet/assets/img/frappe-bird-grey.svg" style="width: 40px; height: 40px; margin-top: 20px;">
+                        </div>
+                    </div>
+					</footer>
+				</div>
+			</div>
+			<div class="modal-backdrop offcanvas-main-section-overlay"></div>
+			<div class="sidebar sidebar-right visible-xs">
+				<div class="sidebar-navbar-items">
+					<ul class="nav navbar-nav navbar-left">
+</ul>
+<ul class="nav navbar-nav navbar-right"><li data-label='Contents' >
+	<a href="https://revant.github.io/fleet/contents.html"
+		
+		>
+	Contents</a></li><li data-label='User Guide' >
+	<a href="https://revant.github.io/fleet/user"
+		
+		>
+	User Guide</a></li><li data-label='Developer Docs' >
+	<a href="https://revant.github.io/fleet/current"
+		
+		>
+	Developer Docs</a></li>
+	<!-- post login tools -->
+
+</ul>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- js should be loaded in body! -->
+    <script>
+    $(function() {
+	if(hljs) {
+		$('pre code').each(function(i, block) {
+			hljs.highlightBlock(block);
+		});
+	}
+
+	$(".toggle-sidebar").on("click", function() {
+		$(".offcanvas").addClass("active-right");
+		return false;
+	});
+
+	// collapse offcanvas sidebars!
+	$(".offcanvas .sidebar").on("click", "a", function() {
+		$(".offcanvas").removeClass("active-left active-right");
+	});
+
+	$(".offcanvas-main-section-overlay").on("click", function() {
+		$(".offcanvas").removeClass("active-left active-right");
+		return false;
+	});
+
+});
+    </script>
+		<script data-html-block="script"></script>
+
+	<!-- csrf_token --></body>
+</html>
