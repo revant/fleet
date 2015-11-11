@@ -16,6 +16,14 @@ frappe.ui.form.on("Vehicle", {
         		if(fuel_item_group === ""){
 	        		msgprint (__("Set \"Fuel Item Group\" in Fleet Settings"));
         		}
+        		if(distance_uom == "km"){
+	        		unhide_field("odometer_km");
+	        		hide_field("odometer_mile");
+        		}
+        		if(distance_uom == "mile"){
+	        		unhide_field("odometer_mile");
+	        		hide_field("odometer_km");
+	        	}
         	}
     	});
     	frm.set_query("default_fuel", function() { 
