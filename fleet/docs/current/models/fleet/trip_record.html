@@ -1,0 +1,326 @@
+<!-- title: Trip Record -->
+
+
+
+
+
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 0.0.0</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/revant/fleet/tree/develop/fleet/fleet/doctype/trip_record"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+    <p><b>Table Name:</b> <code>tabTrip Record</code></p>
+
+
+Records Trips made with Fleet
+
+<h3>Fields</h3>
+
+<table class="table table-bordered" style="table-layout: fixed;">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr >
+            <td>1</td>
+            <td ><code>trip_type</code></td>
+            <td >
+                Select</td>
+            <td >
+                Trip Type
+                
+            </td>
+            <td>
+                <pre>Business
+Charity
+Medical
+Personal
+Other</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td ><code>purpose</code></td>
+            <td >
+                Data</td>
+            <td >
+                Purpose
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td ><code>cb_initial</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td ><code>party_type</code></td>
+            <td >
+                Link</td>
+            <td >
+                Party Type
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="https://revant.github.io/fleet/current/models/core/doctype">DocType</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>party</code></td>
+            <td >
+                Dynamic Link</td>
+            <td >
+                Party
+                
+            </td>
+            <td>
+                <pre>party_type</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td class="danger" title="Mandatory"><code>vehicle</code></td>
+            <td >
+                Link</td>
+            <td >
+                Vehicle
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="https://revant.github.io/fleet/current/models/fleet/vehicle">Vehicle</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>7</td>
+            <td ><code>sb_trip_details</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Trip Details
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td ><code>departure_time</code></td>
+            <td >
+                Datetime</td>
+            <td >
+                Departure Time
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td ><code>departure_odometer_km</code></td>
+            <td >
+                Float</td>
+            <td class="text-muted" title="Hidden">
+                Departure Odometer (KM)
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>10</td>
+            <td ><code>departure_odometer_mile</code></td>
+            <td >
+                Float</td>
+            <td class="text-muted" title="Hidden">
+                Departure Odometer (Mile)
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
+            <td ><code>departure_location</code></td>
+            <td >
+                Data</td>
+            <td >
+                Departure Location
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>12</td>
+            <td ><code>cb_trip_details</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>13</td>
+            <td ><code>arrival_time</code></td>
+            <td >
+                Datetime</td>
+            <td >
+                Arrival Time
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>14</td>
+            <td ><code>arrival_odometer_km</code></td>
+            <td >
+                Float</td>
+            <td class="text-muted" title="Hidden">
+                Arrival Odometer (KM)
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>15</td>
+            <td ><code>arrival_odometer_mile</code></td>
+            <td >
+                Float</td>
+            <td class="text-muted" title="Hidden">
+                Arrival Odometer (Mile)
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>16</td>
+            <td ><code>arrival_location</code></td>
+            <td >
+                Data</td>
+            <td >
+                Arrival Location
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>17</td>
+            <td ><code>amended_from</code></td>
+            <td >
+                Link</td>
+            <td >
+                Amended From
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="https://revant.github.io/fleet/current/models/fleet/trip_record">Trip Record</a>
+
+
+                
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>fleet.fleet.doctype.trip_record.trip_record</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>TripRecord</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.model.document.Document</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+    </div>
+    <hr>
+
+	
+
+
+    
+    
+        <h4>Linked In:</h4>
+        <ul>
+        
+            <li>
+
+
+<a href="https://revant.github.io/fleet/current/models/fleet/trip_record">Trip Record</a>
+
+</li>
+        
+        </ul>
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->

@@ -1,0 +1,538 @@
+<!-- title: Vehicle -->
+
+
+
+
+
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 0.0.0</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/revant/fleet/tree/develop/fleet/fleet/doctype/vehicle"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+    <p><b>Table Name:</b> <code>tabVehicle</code></p>
+
+
+Enter details of Vehicle. Legal details, Purchase and Sales Detail
+
+<h3>Fields</h3>
+
+<table class="table table-bordered" style="table-layout: fixed;">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr >
+            <td>1</td>
+            <td ><code>naming_series</code></td>
+            <td >
+                Select</td>
+            <td >
+                Naming Series
+                
+            </td>
+            <td>
+                <pre>CAR
+BUS</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td class="danger" title="Mandatory"><code>vehicle_name</code></td>
+            <td >
+                Data</td>
+            <td >
+                Vehicle Name
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td ><code>make</code></td>
+            <td >
+                Data</td>
+            <td >
+                Make
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td ><code>model</code></td>
+            <td >
+                Data</td>
+            <td >
+                Model
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>odometer</code></td>
+            <td >
+                Float</td>
+            <td >
+                Odometer
+                <p class="text-muted small">
+                    Odometer can only be set once at creation of vehicle</p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td ><code>year</code></td>
+            <td >
+                Select</td>
+            <td >
+                Year
+                
+            </td>
+            <td>
+                <pre>1990
+1991
+1992
+1993
+1994
+1995
+1996
+1997
+1998
+1999
+2000
+2001
+2002
+2003
+2004
+2005
+2006
+2007
+2008
+2009
+2010
+2011
+2012
+2013
+2014
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+2024
+2025
+2026
+2027
+2028
+2029
+2030
+2031
+2032
+2033
+2034
+2035
+2036
+2037
+2038
+2039
+2040
+2041
+2042
+2043
+2044
+2045
+2046
+2047
+2048
+2049
+2050
+2051
+2052
+2053
+2054
+2055
+2056
+2057
+2058
+2059
+2060
+2061
+2062
+2063
+2064
+2065
+2066
+2067
+2068
+2069
+2070
+2071
+2072
+2073
+2074
+2075
+2076
+2077
+2078
+2079
+2080
+2081
+2082
+2083
+2084
+2085
+2086
+2087
+2088
+2089
+2090
+2091
+2092
+2093
+2094
+2095
+2096
+2097
+2098
+2099</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td ><code>cb1_details</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td ><code>default_fuel</code></td>
+            <td >
+                Link</td>
+            <td >
+                Default Fuel
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="https://revant.github.io/fleet/current/models/stock/item">Item</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td ><code>tank_capacity</code></td>
+            <td >
+                Float</td>
+            <td >
+                Tank Capacity
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>10</td>
+            <td ><code>tank_capacity_uom</code></td>
+            <td >
+                Read Only</td>
+            <td >
+                Tank Capacity UOM
+                
+            </td>
+            <td>
+                <pre>default_fuel.stock_uom</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
+            <td ><code>notes</code></td>
+            <td >
+                Small Text</td>
+            <td >
+                Notes
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>12</td>
+            <td ><code>sb_legal</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Legal
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>13</td>
+            <td ><code>license_plate</code></td>
+            <td >
+                Data</td>
+            <td >
+                License Plate
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>14</td>
+            <td ><code>vin</code></td>
+            <td >
+                Data</td>
+            <td >
+                VIN
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>15</td>
+            <td ><code>cb2_legal</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>16</td>
+            <td ><code>insurance_policy</code></td>
+            <td >
+                Data</td>
+            <td >
+                Insurance Policy
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>17</td>
+            <td ><code>insurance_expiry</code></td>
+            <td >
+                Date</td>
+            <td >
+                Date of Expiry
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>18</td>
+            <td ><code>sb_purchase_details</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Purchase Details
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>19</td>
+            <td ><code>purchase_receipt</code></td>
+            <td >
+                Link</td>
+            <td >
+                Purchase Receipt
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="https://revant.github.io/fleet/current/models/stock/purchase_receipt">Purchase Receipt</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>20</td>
+            <td ><code>purchase_price</code></td>
+            <td >
+                Currency</td>
+            <td >
+                Price
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>21</td>
+            <td ><code>purchase_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                Date of Purchase
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>22</td>
+            <td ><code>sb_sales_details</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Sales Details
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>23</td>
+            <td ><code>delivery_note</code></td>
+            <td >
+                Link</td>
+            <td >
+                Delivery Note
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="https://revant.github.io/fleet/current/models/stock/delivery_note">Delivery Note</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>24</td>
+            <td ><code>sales_price</code></td>
+            <td >
+                Currency</td>
+            <td >
+                Price
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>25</td>
+            <td ><code>sale_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                Date of Sale
+                
+            </td>
+            <td></td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>fleet.fleet.doctype.vehicle.vehicle</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>Vehicle</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.model.document.Document</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+    </div>
+    <hr>
+
+	
+
+
+    
+    
+        <h4>Linked In:</h4>
+        <ul>
+        
+            <li>
+
+
+<a href="https://revant.github.io/fleet/current/models/fleet/trip_record">Trip Record</a>
+
+</li>
+        
+            <li>
+
+
+<a href="https://revant.github.io/fleet/current/models/fleet/fill_up_record">Fill Up Record</a>
+
+</li>
+        
+        </ul>
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->
