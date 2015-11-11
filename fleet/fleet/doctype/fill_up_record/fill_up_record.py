@@ -10,6 +10,10 @@ class FillUpRecord(Document):
 	def validate(self):
 		self.validate_distance_settings()
 		self.validate_last_fillup()
+		self.calculate_total_cost()
+
+	def calculate_total_cost(self):
+		self.total_cost = self.fuel_price * self.fillup_vol
 
 	def validate_last_fillup(self):
 		last_fillup = frappe.get_list("Fill Up Record",
