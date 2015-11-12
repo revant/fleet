@@ -1,4 +1,4 @@
-<!-- title: Fleet: Vehicle -->
+<!-- title: Vehicle -->
 <!-- no-breadcrumbs -->
 
 In Fleet, you can manage Vehicles by creating an Vehicle record.
@@ -31,6 +31,8 @@ In Fleet, you can manage Vehicles by creating an Vehicle record.
  <li><strong>Sales Price</strong>: Enter Sale Price</li>
  <li><strong>Sale Date</strong>: Enter Sale Date</li>
 </ul>
+
+{next}
 
 <!-- autodoc -->
 <!-- jinja -->

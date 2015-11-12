@@ -1,6 +1,5 @@
-<!-- title: Fleet: Fill Up Record -->
+<!-- title: Fill Up Record -->
 <!-- no-breadcrumbs -->
-
 To manage enter **Fill Up Record** go to.
 
 > Fleet > Documents > Fill Up Record
@@ -23,6 +22,8 @@ To manage enter **Fill Up Record** go to.
  <li><strong>Payment Type</strong>: Select Mode of Payment</li>
  <li><strong>Notes</strong>: Enter Specific note</li>
 </ul>
+
+{next}
 
 <!-- autodoc -->
 <!-- jinja -->

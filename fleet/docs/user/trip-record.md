@@ -1,4 +1,4 @@
-<!-- title: Fleet: Trip Record -->
+<!-- title: Trip Record -->
 <!-- no-breadcrumbs -->
 
 To manage enter **Trip Record** go to.
@@ -25,6 +25,7 @@ To manage enter **Trip Record** go to.
  <li><strong>Arrival Location</strong>: Enter Location (Text)</li>
 </ul>
 
+{next}
 
 <!-- autodoc -->
 <!-- jinja -->

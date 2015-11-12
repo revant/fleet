@@ -1,4 +1,4 @@
-<!-- title: Fleet: Fleet Settings -->
+<!-- title: Fleet Settings -->
 <!-- no-breadcrumbs -->
 
 To manage Fleet Settings go to.
